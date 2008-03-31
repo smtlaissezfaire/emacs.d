@@ -1,0 +1,68 @@
+USING CONFIGURE
+===============
+
+0) If you get VM from the revision control, the ./configure script is
+   not included. You have to run "autoconf" to create it.
+
+1) Select your emacs flavor, this is the option --with-emacs and its
+   default is emacs (GNU Emacs).  Choose a prefix for the installation
+   with --prefix, by default /usr/local.
+
+   The default locations are as follows:
+
+   a) GNU Emacs: lisp files goto ${prefix}/share/emacs/site-lisp and
+      info files to ${prefix}/info (overridable with --with-lispdir=...
+      and --infodir=...)
+
+   b) XEmacs: lisp files goto ${prefix}/lib/xemacs/site-packages/lisp/vm and
+      info files to ${prefix}/lib/xemacs/site-packages/info, (overridable
+      with --with-infodir=... and --infodir=...)
+
+   ATTENTION: Files byte-compiled with GNU Emacs are NOT COMPATIBLE with the
+   XEmacs and you may experience strange problems during startup when doing
+   so.  Even between GNU Emacs versions there might be problems! Thus you must
+   ensure you are configuring with --with-emacs=xemacs when installing VM for
+   XEmacs!  Also if you want to use BBDB features please specify the path
+   to its source files with the -with-other-dirs option. 
+
+   a) GNU Emacs users run:
+	./configure --with-other-dirs=/absolute/path/to/bbdb/lisp
+
+   b) XEmacs+BBDB users run:
+	./configure --with-emacs=xemacs --with-other-dirs=/absolute/path/to/bbdb/lisp
+
+   It is possible to build VM in a separate directory. For instance, type
+
+        mkdir build; cd build; ../configure
+
+2) Compile everything by running:
+
+	make
+
+    You may ignore warnings, however error messages indicate that some modules
+    (partially) will not work, i.e. if other library files are missing or you
+    are running GNU Emacs.
+
+3) Installing the files
+
+   a) The manual way
+
+       Add the lisp/info path as chosen above to the paths Emacs searches, 
+       i.e. add the following to your ~/.emacs resp. ~/.xemacs/init.el (if you
+       don't already have an equivalent)
+
+         (add-to-list 'load-path "/path/to/lisp/build/dir")
+         (add-to-list 'Info-default-directory-list "/path/to/the/info/dir"))
+
+       GNU Emacs users, have to load the autloads by hand now by adding
+
+         (require 'vm-autoloads)
+
+       to their ~/.emacs.
+
+       XEmacs: You are lucky nothing to do for you!
+
+4) You are now ready to use VM.  C-h i should start up the Emacs Info
+   system and if you have installed the Info documents properly you can
+   use the online documentation to teach yourself how to use VM.
+

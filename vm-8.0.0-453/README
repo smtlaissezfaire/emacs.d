@@ -1,0 +1,120 @@
+VM was written by Kyle Jones! Hail Kyle! The last release from Kyle was 7.19.
+
+VM's home page up to version 7.19 on the World Wide Web is at
+http://www.wonderworks.com/vm and the FAQ is still hosted there.
+
+This VM is based on my (Robert Widhopf-Fenk) patches against VM 7.19.
+
+The persons who have contributed to this version of VM are:
+
+ * Aidan Kehoe
+ * Glenn ???
+ * Jens Gustedt
+ * John J Foerch
+ * Kevin Rogers
+ * Kyle Jones
+ * Rob Hodges
+ * Robert Marshall
+ * Robert P. Goldman
+ * Robert Widhopf-Fenk
+
+Please mail me a note, if I have forgotten someone or accidently put you on
+the list. 
+
+Read INSTALL and follow the instructions to compile and setup VM.
+
+*******************************************************************************
+BUGS
+
+If you have any problems or meet a bug it is best to discuss them on the USENET
+groups gnu.emacs.vm.bugs or gnu.emacs.vm.info!  Also search the groups before
+posting as there might have been some discussion and a fix before.
+
+Report any problems or bugs otherwise they cannot be fixed!
+
+Please provide the version number of VM and Emacs and how to reproduce the
+problem.
+
+Personally I am an follower of the XEmacs church and thus some things may not
+work with GNU Emacs, nevertheless I test VM also on GNU Emacs from time to
+time and I am happy to merge you fixes.
+
+*******************************************************************************
+Homepage
+
+The new homepage of VM is at http://www.nongnu.org/viewmail/ hosted by
+Savannah.  There is a bugtracker and other stuff, but I prefer the news
+groups!
+
+*******************************************************************************
+Wiki
+
+The Wiki at http://www.emacswiki.org/cgi-bin/wiki?id=CategoryViewMail is
+best suited to conserve code snippets, cooking guides or feature requests.
+
+*******************************************************************************
+BZR (http://bazaar-vcs.org/)
+
+I maintain my changes with BZR now, since CVS and SVN suck and TLA/BAZ do as well.
+
+If you want to send me changes or start hacking on your own you may want to 
+branch from my repository at http://www.robf.de/Hacking/bazaar/vm-repo.
+
+# create your own branch from the trunk
+bzr get http://www.robf.de/Hacking/bazaar/vm-repo/vm-trunk
+# get updates
+bzr pull
+# start hacking 
+xemacs vm-pgg.el
+# commit your changes 
+bzr commit
+# Generate a bundle of your changes for merging
+bzr bundle-revisions --output=xy-changes.diff
+# Attach the bundle to a mail (rather than doing cut&paste) and send
+# it to hack@robf.de with a descriptive subject.  
+
+*******************************************************************************
+COMMENTS
+
+The documentation of my changes is incomplete and the changes may even cause
+new problems or bugs.  
+
+This VM provides the following hacks & enhancements and other stuff not
+listed here, as I am quite lazy in writing docs. ;c) 
+
+Additional extensions for VM written by myself:
+- vm-pine.el	      for draft handling and other Pine inspired functions.
+- vm-ps-print.el      for nice ps-printing functions
+- vm-rfaddons.el      adds various add-ons to VM
+- vm-grepmail	      a grepmail interface for VM
+- vm-avirtual.el      brings additional virtual folder selectors and functions
+		      for spam tagging
+- vm-biff.el	      is a xbiff within VM, notifying you of new mail
+- vm-serial.el	      templates for mails, personalized serial mails 
+- vm-summary-faces.el face base on virtual selectors 
+
+Additional extensions for VM from other people:
+- vm-pcrisis.el	      by Rob Hodges for people with personal crisis which need
+		      to rewrite headers automatically. 
+- vcard.el            by Noah Friedman <friedman@splode.com> for
+  vm-vcard.el	      displaying vcards within VM.
+
+Changes of the VM core (incomplete):
+- make-autoloads: enhanced output & ignore links
+- vm-mime.el:
+	* vm-pine patch for attachment handling of continued message drafts
+	* mime button displaying file name of attachment
+	* write mime filter
+	* qp-decoding of disposition parameters like filename etc.
+- vm-mouse.el: handling of email-addresses like "mailto:" URLs
+- vm-page.el: vm-energize-urls is interactive now, this allows you to easily
+	      check URLs in a message you are currently composing.
+- vm-reply.el:
+	* Proper setting of subject & references when replying to multiple
+	  messages.
+	* Filtering of MIME types when yanking a message.  Now only those
+	  types listed in `vm-included-mime-types-list' are yanked and you
+	  will have no attachment mess any more!
+- vm-startup.el: vm-mail takes now a subject argument
+- vm-vars.el: two new variables for customization (see vm-reply)
+	* vm-included-mime-types-list

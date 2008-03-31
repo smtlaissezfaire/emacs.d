@@ -1,0 +1,55 @@
+@SET_MAKE@
+
+##############################################################################
+# no csh please
+SHELL = /bin/sh
+
+SOURCES = $(wildcard *.c)
+
+OBJECTS = $(SOURCES:.c=.o)
+
+##############################################################################
+# location of required programms
+prefix = @prefix@
+exec_prefix = @exec_prefix@
+MKDIR = @MKDIR@
+RM   = @RM@
+LS   = @LS@
+XARGS = @XARGS@
+INSTALL = @INSTALL@
+INSTALL_PROGRAM = @INSTALL_PROGRAM@
+INSTALL_SCRIPT = @INSTALL_SCRIPT@
+INSTALL_DATA = @INSTALL_DATA@
+
+prefix = @prefix@
+top_srcdir = @top_srcdir@
+srcdir = @srcdir@
+datadir= @datadir@
+datarootdir= @datarootdir@
+lispdir = @lispdir@
+bindir= @bindir@
+
+##############################################################################
+all: $(SOURCES:.c=)
+
+install:
+	for i in $(SOURCES:.c=) ; do                               \
+	  echo "Installing $$i in $(bindir)" ;                     \
+          $(INSTALL_DATA) $$i $(bindir) ;                          \
+        done ;
+	@echo VM helper binaries successfully installed\!
+
+##############################################################################
+Makefile: @srcdir@/Makefile.in
+	cd ..; ./config.status
+
+##############################################################################
+clean:
+	-$(RM) -f $(SOURCES:.c=)
+
+distclean: clean
+	-$(RM) -f Makefile
+
+##############################################################################
+release:
+	TODO
