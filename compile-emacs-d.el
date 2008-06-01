@@ -3,3 +3,4 @@
 
 (byte-recompile-directory "~/.emacs.d/" 0)
 (byte-recompile-directory "/Applications/Emacs.app" 0)
+(byte-recompile-directory "~/src/git/emacs-extensions/" 0)
