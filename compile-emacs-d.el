@@ -10,5 +10,4 @@
     (byte-recompile-directory (car dir_list))
     (byte-compile-selected-directories (cdr dir_list)))))
                               
-  
 (byte-compile-selected-directories *special-compile-directories*)
