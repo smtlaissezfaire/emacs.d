@@ -3,9 +3,6 @@
 (require 'cl)
 (defvar *emacs-load-start* (current-time))
 
-(defvar f nil)
-(defvar false nil)
-
 ; use iswitchb
 (iswitchb-mode)
 (iswitchb-default-keybindings)

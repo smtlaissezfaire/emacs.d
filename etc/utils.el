@@ -1,3 +1,8 @@
+
+; conveniences.  scheme / ruby seems nicer
+(defvar f nil)
+(defvar false nil)
+
 ;; Lists
 (defun empty-p (list)
   (eq list nil))
