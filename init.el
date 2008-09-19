@@ -142,8 +142,6 @@
                                            nil
                                            'fullboth)))
 (toggle-fullscreen)
-(global-set-key [(meta return)] 'toggle-fullscreen)
-
 
 ; set highlighting with mark:
 (transient-mark-mode t)

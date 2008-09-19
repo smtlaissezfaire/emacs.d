@@ -13,3 +13,5 @@
 ; use C-c C-a to select the whole buffer
 (global-set-key "\C-c\C-a" 'mark-whole-buffer)
 
+(global-set-key [(meta return)] 'toggle-fullscreen)
+
