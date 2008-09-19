@@ -2,9 +2,6 @@
 (load "~/.emacs.d/etc/load_times")
 (set-start-load-time)
 
-; load time for emacs (also, see bottom of the file)
-(require 'cl)
-
 (load "~/.emacs.d/etc/utils.el")
 
 ; use iswitchb

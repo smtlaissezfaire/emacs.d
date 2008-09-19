@@ -1,3 +1,6 @@
+
+(require 'cl)
+
 ; ruby syntax highlighting, ruby-electric:
 (require 'inf-ruby)
 (require 'ruby-electric)
