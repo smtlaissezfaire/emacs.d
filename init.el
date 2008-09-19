@@ -41,22 +41,7 @@
 ; don't insert mule encoding utf-8 string at the top of a file
 (defun ruby-mode-set-encoding())
 
-
-;;;;;;;;;;;;;;
-;            ;
-;   ERC      ;
-;            ;
-;;;;;;;;;;;;;;
-
-
-; erc = emacs irc
-; autoload it
 (require 'erc)
-
-
-
-
-
 
 ;; *DONT* use tabs
 (setq-default indent-tabs-mode nil)
