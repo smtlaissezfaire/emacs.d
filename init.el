@@ -4,9 +4,6 @@
 
 (load "~/.emacs.d/etc/utils.el")
 
-(progn (cd "~/.emacs.d")
-       (normal-top-level-add-subdirs-to-load-path))
-
 (load "~/.emacs.d/vendor.el")
 (load "~/.emacs.d/etc/colors.el")
 (load "~/.emacs.d/customizations/tabs.el")
