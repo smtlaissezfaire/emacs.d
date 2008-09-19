@@ -179,21 +179,6 @@
    ; stores numbers for each version
    version-control t)
 
-; easier goto line
-(global-set-key "\C-xg" 'goto-line)
-
-; set comment-region
-(global-set-key "\C-xc" 'comment-region)
-
-; set uncomment-region
-(global-set-key "\C-xu" 'uncomment-region)
-
-; set keybinding for running rspec:
-(global-set-key "\M-s" 'run-specs)
-
-; use C-c C-a to select the whole buffer
-(global-set-key "\C-c\C-a" 'mark-whole-buffer)
-
 ; load time for emacs.  (also see top of the file)
 (message "My .emacs loaded in %ds" (destructuring-bind (hi lo ms) (current-time)
                            (- (+ hi lo) (+ (first *emacs-load-start*) (second *emacs-load-start*)))))
