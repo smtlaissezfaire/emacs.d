@@ -15,7 +15,7 @@
 (load "~/.emacs.d/vendor.el")
 (load "~/.emacs.d/etc/colors.el")
 (load "~/.emacs.d/customizations/tabs.el")
-
+(load "~/.emacs.d/customizations/full_screen.el")
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; random customization ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -43,11 +43,6 @@
 ; set the option key to be the meta key
 (setq mac-option-modifier 'meta)
 
-(defun toggle-fullscreen ()
-  (interactive)
-  (set-frame-parameter nil 'fullscreen (if (frame-parameter nil 'fullscreen)
-                                           nil
-                                           'fullboth)))
 (toggle-fullscreen)
 
 ; set highlighting with mark:
