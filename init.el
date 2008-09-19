@@ -3,6 +3,8 @@
 (require 'cl)
 (defvar *emacs-load-start* (current-time))
 
+(load "~/.emacs.d/etc/utils.el")
+
 ; use iswitchb
 (iswitchb-mode)
 (iswitchb-default-keybindings)
