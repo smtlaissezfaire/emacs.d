@@ -4,10 +4,6 @@
 
 (load "~/.emacs.d/etc/utils.el")
 
-; use iswitchb
-(iswitchb-mode)
-(iswitchb-default-keybindings)
-
 (progn (cd "~/.emacs.d")
        (normal-top-level-add-subdirs-to-load-path))
 

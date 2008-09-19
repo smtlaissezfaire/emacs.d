@@ -5,7 +5,12 @@
 
 ; set the option key to be the meta key
 (setq mac-option-modifier 'meta)
+; start full screen
 (toggle-fullscreen)
+
+; use iswitchb
+(iswitchb-mode)
+(iswitchb-default-keybindings)
 
 ; set highlighting with mark:
 (transient-mark-mode t)
@@ -22,6 +27,4 @@
 ; use option for the metakey for emacs (aquaemacs / x11)
 (setq mac-option-modifier 'meta)
 
-(load "vibrant-ink")
 (set-theme-to-vibrant-ink)
-
