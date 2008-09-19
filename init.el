@@ -1,7 +1,9 @@
 
+(load "~/.emacs.d/etc/load_times")
+(set-start-load-time)
+
 ; load time for emacs (also, see bottom of the file)
 (require 'cl)
-(defvar *emacs-load-start* (current-time))
 
 (load "~/.emacs.d/etc/utils.el")
 
@@ -48,13 +50,9 @@
 ;
 ;;;;;;;;;;;;;;;;;;;
 
-(load "~/.emacs.d/vibrant-ink")
-(load "~/.emacs.d/start_up.el")
+(load "~/.emacs.d/themes/vibrant-ink")
+(load "~/.emacs.d/etc/start_up.el")
 
+(report-total-load-time)
 
-
-
-; load time for emacs.  (also see top of the file)
-(message "My .emacs loaded in %ds" (destructuring-bind (hi lo ms) (current-time)
-                           (- (+ hi lo) (+ (first *emacs-load-start*) (second *emacs-load-start*)))))
 
