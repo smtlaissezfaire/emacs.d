@@ -17,20 +17,7 @@
 (load "spec-runner")
 (load "ido-find-in-project")
 (load "erlang_emacs")
-
-
-(defconst *gemdir* "/usr/lib/ruby/user-gems/1.8/gems")
-(defun go-to-gemdir nil
-  (interactive)
-  (find-file *gemdir*))
-
-(defconst *flavorpill* "~/src/git/flavorpill_com")
-(defun go-to-flavorpill-directory nil 
-  (interactive)
-  (find-file *flavorpill*))
-(defalias
-  'fp
-  (symbol-function 'go-to-flavorpill-directory))
+(load "~/.emacs.d/etc/common_directories")
 
 ;;;;;;;;;;;;;;;;;;;;
 ;  themes
