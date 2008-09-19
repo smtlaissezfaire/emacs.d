@@ -55,3 +55,11 @@
       (while (funcall search-function search-string nil t)
         (replace-match replace))
       (buffer-string))))
+
+; Common lisp extensions, taken from my 
+; emacs-extensions emacs-lisp-experiments
+(defun read-file (filename)
+  (with-temp-buffer
+    (insert-file-contents filename)
+    (goto-char (point-min))
+    (buffer-string)))
