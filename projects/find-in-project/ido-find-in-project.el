@@ -8,7 +8,8 @@
 ;; Dependencies:
 ;;  iswitchb
 
-(add-to-list 'load-path ".")
+(add-to-list 'load-path "~/.emacs.d/projects/find-in-project")
+(load "rails-helpers")
 
 (defun interactive-find-in-project nil
   "If we are in a rails project, use the interactive lookup - otherwise,
