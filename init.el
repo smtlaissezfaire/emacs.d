@@ -18,12 +18,6 @@
 (load "ido-find-in-project")
 (load "erlang_emacs")
 (load "~/.emacs.d/etc/common_directories")
-
-;;;;;;;;;;;;;;;;;;;;
-;  themes
-;
-;;;;;;;;;;;;;;;;;;;
-
 (load "~/.emacs.d/themes/vibrant-ink")
 (load "~/.emacs.d/etc/start_up.el")
 
