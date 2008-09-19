@@ -1,7 +1,9 @@
 
+# Emacs backup files
 *\#*
 auto-save-list
 
+# Byte compiled files
 *.elc
 
 
