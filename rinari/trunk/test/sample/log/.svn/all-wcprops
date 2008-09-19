@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/svn/!svn/ver/1/trunk/test/sample/log
+END
+test.log
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/1/trunk/test/sample/log/test.log
+END
+development.log
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/1/trunk/test/sample/log/development.log
+END
+production.log
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/1/trunk/test/sample/log/production.log
+END
+server.log
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/1/trunk/test/sample/log/server.log
+END

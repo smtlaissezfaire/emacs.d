@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/1/trunk/test/sample/script/process
+END
+spawner
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/1/trunk/test/sample/script/process/spawner
+END
+reaper
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/1/trunk/test/sample/script/process/reaper
+END

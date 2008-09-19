@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 32
+/svn/!svn/ver/96/trunk/test/lisp
+END
+init.el
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/!svn/ver/96/trunk/test/lisp/init.el
+END
+ruby-mode.el
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/82/trunk/test/lisp/ruby-mode.el
+END
+ruby-electric.el
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/82/trunk/test/lisp/ruby-electric.el
+END
+inf-ruby.el
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/82/trunk/test/lisp/inf-ruby.el
+END

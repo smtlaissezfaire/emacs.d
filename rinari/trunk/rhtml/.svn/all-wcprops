@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 28
+/svn/!svn/ver/96/trunk/rhtml
+END
+LICENSE
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/svn/!svn/ver/89/trunk/rhtml/LICENSE
+END
+rhtml-navigation.el
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/96/trunk/rhtml/rhtml-navigation.el
+END
+rhtml-ruby-hook.el
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/18/trunk/rhtml/rhtml-ruby-hook.el
+END
+test.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svn/!svn/ver/87/trunk/rhtml/test.rhtml
+END
+rhtml-mode.el
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/!svn/ver/96/trunk/rhtml/rhtml-mode.el
+END
+DEPTREE
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/svn/!svn/ver/32/trunk/rhtml/DEPTREE
+END
+rhtml-erb.el
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/!svn/ver/90/trunk/rhtml/rhtml-erb.el
+END
+rhtml-fonts.el
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/!svn/ver/90/trunk/rhtml/rhtml-fonts.el
+END
+rhtml-sgml-hacks.el
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/31/trunk/rhtml/rhtml-sgml-hacks.el
+END

@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/1/trunk/test/sample/test/fixtures
+END
+foos.yml
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/1/trunk/test/sample/test/fixtures/foos.yml
+END
+bars.yml
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/1/trunk/test/sample/test/fixtures/bars.yml
+END
