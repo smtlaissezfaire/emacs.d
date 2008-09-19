@@ -1,7 +1,7 @@
 
 ;; byte compile all files in this directory
 
-(defvar *my-special-compile-directories* '("~/.emacs.d/" "/Applications/Emacs.app" "~/src/git/emacs-extensions/"))
+(defvar *my-special-compile-directories* '("~/.emacs.d"))
 
 (defun byte-compile-selected-directories (dir_list)
   (cond 
