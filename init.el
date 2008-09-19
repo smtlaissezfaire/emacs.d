@@ -194,15 +194,6 @@
 ; use C-c C-a to select the whole buffer
 (global-set-key "\C-c\C-a" 'mark-whole-buffer)
 
-;; auto-indent code after yanking
-(defun yank-and-indent ()
-  "Yank and then indent the newly formed region according to mode"
-  (interactive)
-  (yank)
-  (call-interactively 'indent-region))
-
-(global-set-key "\C-y" 'yank-and-indent)
-
 ; load time for emacs.  (also see top of the file)
 (message "My .emacs loaded in %ds" (destructuring-bind (hi lo ms) (current-time)
                            (- (+ hi lo) (+ (first *emacs-load-start*) (second *emacs-load-start*)))))
