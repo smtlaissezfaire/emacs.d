@@ -3,7 +3,6 @@
 (set-start-load-time)
 
 (load "~/.emacs.d/etc/utils.el")
-
 (load "~/.emacs.d/vendor.el")
 (load "~/.emacs.d/etc/colors.el")
 (load "~/.emacs.d/customizations/tabs.el")
