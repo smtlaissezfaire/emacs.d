@@ -116,7 +116,6 @@
 
 
 ; my own custom extensions: 
-(add-to-list 'load-path "~/src/git/emacs-extensions")
 (load "ruby-snippets-code")
 (load "flymake-ruby")
 (load "spec-runner")
