@@ -12,6 +12,7 @@
 (load "~/.emacs.d/customizations/tabs.el")
 (load "~/.emacs.d/customizations/full_screen.el")
 (load "~/.emacs.d/customizations/tramp_customization")
+(load "~/.emacs.d/customizations/keybindings")
 (load "~/.emacs.d/etc/snippets/ruby-snippets-code")
 (load "~/.emacs.d/customizations/flymake-ruby")
 (load "~/.emacs.d/etc/spec-runner")
