@@ -9,9 +9,6 @@
 ;;  iswitchb
 
 (add-to-list 'load-path ".")
-(load "cl.el")
-(load "utils")
-(load "rails-helpers")
 
 (defun interactive-find-in-project nil
   "If we are in a rails project, use the interactive lookup - otherwise,
