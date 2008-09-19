@@ -12,31 +12,7 @@
 (progn (cd "~/.emacs.d")
        (normal-top-level-add-subdirs-to-load-path))
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;; vendor loading ;;;;;;;;
-;;;;;;;;;;;;;;;;;;;;;;;;;;;
-
-; ruby syntax highlighting, ruby-electric:
-(require 'inf-ruby)
-(require 'ruby-electric)
-; rcodetools - use with M-x xmp to capture STDOUT
-(require 'rcodetools)
-; a rails package - lots of useful stuff
-(require 'rails)
-(require 'rinari)
-; flymake, for ruby
-(require 'flymake)
-(require 'erc)
-(autoload 'js2-mode "js2" nil t)
-(add-to-list 'auto-mode-alist '("\\.js$" . js2-mode))
-(setq auto-mode-alist (append '(("\\.js$" . c-mode)) auto-mode-alist))
-(autoload 'git-blame-mode "git-blame"
-  "Minor mode for incremental blame for Git." t)
-(require 'git)
-(require 'gitsum)
-; treetop:
-(load "treetop")
-
+(load "~/.emacs.d/vendor.el")
 
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;
