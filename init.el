@@ -34,9 +34,6 @@
   :group 'rhtml-faces)
 (require 'rinari)
 
-; Start up emacs-client.  This allows us to open files from the command line
-(server-start)
-
 ; flymake, for ruby
 (require 'flymake)
 (set-face-background 'flymake-errline "red4")
@@ -150,6 +147,10 @@
 
 ; always end a file with a newline:
 (setq inhibit-default-init t)
+
+; Start up emacs-client.  This allows us to open files from the command line
+(server-start)
+
 
 (defconst *gemdir* "/usr/lib/ruby/user-gems/1.8/gems")
 (defun go-to-gemdir nil
