@@ -11,12 +11,6 @@
 (load "~/.emacs.d/etc/colors.el")
 (load "~/.emacs.d/customizations/tabs.el")
 (load "~/.emacs.d/customizations/full_screen.el")
-;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;; random customization ;;
-;;;;;;;;;;;;;;;;;;;;;;;;;;;
-
-
-; my own custom extensions: 
 (load "tramp_customization")
 (load "ruby-snippets-code")
 (load "flymake-ruby")
