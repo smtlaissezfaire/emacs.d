@@ -1,0 +1,22 @@
+[mirror]
+	summary = true
+[user]
+	email = scott@railsnewbie.com
+	name = Scott Taylor
+[diff]
+  rename = copy 
+
+# Always enable color, in all commands
+[color]
+  ui = true
+[core]
+  whitespace=fix,-indent-with-non-tab,trailing-space,cr-at-eol
+
+[alias]
+  ba  = branch -a
+  st  = status
+  ca  = commit -a -v
+  ci  = commit -v
+  pl  = pull --rebase
+  pu  = push
+  cmp = gc --aggressive
