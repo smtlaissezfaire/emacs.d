@@ -17,7 +17,7 @@
 (load "~/.emacs.d/etc/common_directories")
 (load "~/.emacs.d/themes/vibrant-ink")
 (load "~/.emacs.d/etc/start_up.el")
-(load "~/.emacs.d/colors/flymake.el")
+(load "~/.emacs.d/etc/colors/flymake.el")
 
 (report-total-load-time)
 
