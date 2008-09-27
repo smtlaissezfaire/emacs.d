@@ -38,3 +38,6 @@
 
 ; treetop ruby editing mode:
 (load "~/.emacs.d/vendor/treetop")
+
+; slime
+(load "~/.emacs.d/vendor/slime")
