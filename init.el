@@ -21,6 +21,7 @@
 (load "~/.emacs.d/etc/snippets/ruby-snippets-code")
 (load "~/.emacs.d/etc/common_directories")
 (load "~/.emacs.d/etc/spec-runner")
+(load "~/.emacs.d/customizations/emacs_backup_files")
 
 ; this should always be loaded last:
 (load "~/.emacs.d/etc/start_up")
