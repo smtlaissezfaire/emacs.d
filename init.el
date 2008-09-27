@@ -2,12 +2,13 @@
 (load "~/.emacs.d/etc/load_times")
 (set-start-load-time)
 
+; the load order of the following *is* important
 (load "~/.emacs.d/etc/colors/rinari.el")
 (load "~/.emacs.d/etc/utils.el")
 (load "~/.emacs.d/vendor.el")
 (load "~/.emacs.d/customizations/flymake-ruby")
-(load "~/.emacs.d/themes/vibrant-ink")
 (load "~/.emacs.d/etc/colors/flymake.el")
+(load "~/.emacs.d/themes/vibrant-ink")
 
 ; the order of the following files is unimportant
 (load "~/.emacs.d/projects/find-in-project/ido-find-in-project")
