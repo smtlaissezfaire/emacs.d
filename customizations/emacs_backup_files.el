@@ -2,7 +2,7 @@
 (setq
    ; dont' clobber symlinks
    backup-by-copying t
-   ; save the backups in ~/.saves
+   ; save the backups
    backup-directory-alist '(("." . "~/.emacs.d/auto-save-list"))
    ; delete excess backups silently
    delete-old-versions t
