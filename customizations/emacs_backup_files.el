@@ -1,7 +1,7 @@
 ; backup settings
 (setq
    ; dont' clobber symlinks
-   backup-by-copying t      
+   backup-by-copying t
    ; save the backups in ~/.saves
    backup-directory-alist '(("." . "~/.emacs.d/auto-save-list"))
    ; delete excess backups silently
