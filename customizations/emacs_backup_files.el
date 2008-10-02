@@ -11,3 +11,6 @@
    kept-old-versions 5
    ; stores numbers for each version
    version-control t)
+
+; autosave files: .# and #..# files
+(setq auto-save-list-file-prefix "~/.emacs.d/auto-save-list")
