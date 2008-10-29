@@ -51,6 +51,8 @@ with the complete path name as the cdr, and the abbreviated path name as the car
    (find-all-files project-root (find-command))))
 
 (defun find-command nil
+  "Find the command to find files.  Usually it's a 'find | grep'.
+   Uses the text .emproj if it exists, otherwise uses the default rails find command"
   (setq emproj_file (concat (project-root) ".emproj"))
   (cond ((file-exists-p emproj_file)
          (read (read-file emproj_file)))
