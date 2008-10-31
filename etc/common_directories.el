@@ -9,6 +9,4 @@
 (defun go-to-flavorpill-directory nil 
   (interactive)
   (find-file *flavorpill*))
-(defalias
-  'fp
-  (symbol-function 'go-to-flavorpill-directory))
+(defalias 'fp 'go-to-flavorpill-directory)
