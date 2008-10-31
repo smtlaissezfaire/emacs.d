@@ -17,4 +17,3 @@
   (interactive)
   (find-file *guillotine*))
 (defalias 'guillotine 'go-to-guillotine-directory)
-
