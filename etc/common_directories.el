@@ -10,4 +10,9 @@
   (find-file *flavorpill*))
 (defalias 'fp 'go-to-flavorpill-directory)
 
+(defconst *guillotine* "~/src/git/guillotine")
+(defun go-to-guillotine-directory nil
+  (interactive)
+  (find-file *guillotine*))
+(defalias 'guillotine 'go-to-guillotine-directory)
 
