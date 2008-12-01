@@ -4,8 +4,6 @@
   (find-file *gemdir*))
 (defalias 'gemdir 'go-to-gemdir)
 
-(defalias 'gemdir 'go-to-gemdir)
-
 (defconst *flavorpill* "~/src/git/flavorpill_com")
 (defun go-to-flavorpill-directory nil 
   (interactive)
