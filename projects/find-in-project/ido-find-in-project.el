@@ -50,6 +50,9 @@ with the complete path name as the cdr, and the abbreviated path name as the car
    (lambda (file) (list (basename file) file))
    (find-all-files project-root (find-command))))
 
+(defconst *default-find-command-for-root-dir*
+  "find . | grep '.rb\\|.rhtml' | grep -v .svn | grep -v '\#' | grep -v '\~'")
+
 (defun find-command nil
   "Find the command to find files.  Usually it's a 'find | grep'.
    Uses the text .emproj if it exists, otherwise uses the default rails find command"
@@ -57,7 +60,7 @@ with the complete path name as the cdr, and the abbreviated path name as the car
   (cond ((file-exists-p emproj_file)
          (read (read-file emproj_file)))
         ((rails-root)
-         "find . | grep '.rb\\|.rhtml' | grep -v .svn | grep -v '\#' | grep -v '\~'")))
+         *default-find-command-for-root-dir*)))
 
 ;;;;;;;;;;;;;;;;;;
 ;;              ;;
