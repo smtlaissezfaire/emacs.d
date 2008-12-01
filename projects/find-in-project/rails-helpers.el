@@ -14,8 +14,11 @@
 (defun project-root nil
   (or 
    (project-file-root *project-file*)
-   (rails-root)
-   (git-project-root)))
+   (generic-project-root-p)))
+
+(defun generic-project-root-p nil
+  (or (rails-root)
+      (git-project-root)))
 
 (defun project-file-root (file &optional dir)
   (or dir (setq dir default-directory))

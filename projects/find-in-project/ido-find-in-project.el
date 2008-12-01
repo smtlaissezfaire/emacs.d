@@ -59,7 +59,7 @@ with the complete path name as the cdr, and the abbreviated path name as the car
   (setq emproj_file (concat (project-root) ".emproj"))
   (cond ((file-exists-p emproj_file)
          (read (read-file emproj_file)))
-        ((or (rails-root) (git-project-root))
+        ((generic-project-root-p)
          *default-find-command-for-root-dir*)))
 
 ;;;;;;;;;;;;;;;;;;
