@@ -4,3 +4,6 @@
 [submodule "vendor/rinari"]
 	path = vendor/rinari
 	url = git://github.com/technomancy/rinari.git
+[submodule "vendor/ruby"]
+	path = vendor/ruby
+	url = git://github.com/smtlaissezfaire/ruby-emacs.git
