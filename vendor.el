@@ -2,13 +2,13 @@
 (add-to-list 'load-path "~/.emacs.d/vendor/")
 
 (require 'cl)
+
 ; rcodetools - use with M-x xmp to capture STDOUT
-(require 'rcodetools)
+;; (require 'rcodetools)
 
 ; a rails package - lots of useful stuff
 (add-to-list 'load-path "~/.emacs.d/vendor/rinari/")
 (require 'rinari)
-
 (require 'ruby-electric)
 (require 'flymake)
 
