@@ -10,14 +10,14 @@
 
 ; ruby syntax highlighting, ruby-electric:
 (require 'inf-ruby)
-(require 'ruby-electric)
+(require 'ruby-electric "~/.emacs.d/vendor/ruby-electric.el")
 
 ; rcodetools - use with M-x xmp to capture STDOUT
 (require 'rcodetools "~/.emacs.d/vendor/rcodetools.el")
 
 ; a rails package - lots of useful stuff
 (require 'rails "~/.emacs.d/vendor/emacs-rails/rails.el")
-(require 'rinari)
+(require 'rinari "~/.emacs.d/vendor/rinari/rinari.el")
 
 ; flymake, for ruby
 (require 'flymake)
