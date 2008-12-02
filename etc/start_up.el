@@ -1,7 +1,8 @@
 ; remove the toolbar, menubar, scrollbar
-(tool-bar-mode -1)
-(menu-bar-mode -1)
-(scroll-bar-mode -1)
+(cond ((fboundp 'tool-bar-mode)
+       (tool-bar-mode -1)
+       (menu-bar-mode -1)
+       (scroll-bar-mode -1)))
 
 ; set the option key to be the meta key
 (setq mac-option-modifier 'meta)
