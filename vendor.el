@@ -3,23 +3,15 @@
              (progn (cd "~/.emacs.d/vendor")
                     (normal-top-level-add-subdirs-to-load-path)))
 
+(add-to-list 'load-path "~/.emacs.d/vendor/")
+
 (require 'cl)
-; not sure why, but here we need to specify the file
-; path explicitly
-(require 'find-recursive "~/.emacs.d/vendor/find-recursive.el")
-
-; ruby syntax highlighting, ruby-electric:
-(require 'inf-ruby)
-(require 'ruby-electric "~/.emacs.d/vendor/ruby-electric.el")
-
 ; rcodetools - use with M-x xmp to capture STDOUT
-(require 'rcodetools "~/.emacs.d/vendor/rcodetools.el")
+(require 'rcodetools)
 
 ; a rails package - lots of useful stuff
-(require 'rails "~/.emacs.d/vendor/emacs-rails/rails.el")
-(require 'rinari "~/.emacs.d/vendor/rinari/rinari.el")
-
-; flymake, for ruby
+(require 'rinari)
+(require 'ruby-electric)
 (require 'flymake)
 
 ; for chatting on irc
@@ -38,6 +30,3 @@
 
 ; treetop ruby editing mode:
 (load "~/.emacs.d/vendor/treetop")
-
-; slime
-; (load "~/.emacs.d/vendor/slime")
