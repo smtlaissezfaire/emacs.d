@@ -2,6 +2,10 @@
 (add-to-list 'load-path "~/.emacs.d/vendor/")
 
 (require 'cl)
+(add-to-list 'load-path "~/.emacs.d/vendor/ruby")
+(require 'inf-ruby)
+(require 'ruby-mode)
+(require 'ruby-electric)
 
 ; rcodetools - use with M-x xmp to capture STDOUT
 ;; (require 'rcodetools)
@@ -9,7 +13,6 @@
 ; a rails package - lots of useful stuff
 (add-to-list 'load-path "~/.emacs.d/vendor/rinari/")
 (require 'rinari)
-(require 'ruby-electric)
 (require 'flymake)
 
 ; for chatting on irc
