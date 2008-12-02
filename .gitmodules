@@ -1,3 +1,6 @@
 [submodule "vendor/slime"]
 	path = vendor/slime
 	url = git://github.com/pat-maddox/slime.git
+[submodule "vendor/rinari"]
+	path = vendor/rinari
+	url = git://github.com/technomancy/rinari.git
