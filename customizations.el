@@ -2,7 +2,7 @@
 
 ; the order of the following files is unimportant
 (load "~/.emacs.d/projects/find-in-project/ido-find-in-project")
-(load "~/.emacs.d/customizations/erlang_emacs")
+; (load "~/.emacs.d/customizations/erlang_emacs")
 (load "~/.emacs.d/customizations/emacs_backup_files")
 (load "~/.emacs.d/customizations/tabs")
 (load "~/.emacs.d/customizations/full_screen")
