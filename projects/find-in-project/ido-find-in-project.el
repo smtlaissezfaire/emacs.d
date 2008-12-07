@@ -27,7 +27,7 @@ strings to choose from."
   (cond ((project-root)
          (lookup-and-switch-to
           (interactive-find-in-project-prompt "find-in-project: "
-                                              (firsts (find-files (project-root))))))))
+                                              (find-files (project-root)))))))
 (defun lookup-and-switch-to (file)
   (find-file (concat (project-root) file)))
 
@@ -42,9 +42,7 @@ with the complete path name as the cdr, and the abbreviated path name as the car
         (cd directory-root)
         (split-string (shell-command-to-string shell-cmd)))))
 
-  (mapcar
-   (lambda (file) (list file))
-   (find-all-files project-root (find-command))))
+  (find-all-files project-root (find-command)))
 
 (defconst *default-find-command-for-root-dir*
   "find . | grep '.rb\\|.rhtml' | grep -v .svn | grep -v '\#' | grep -v '\~'")
