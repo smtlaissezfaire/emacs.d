@@ -12,3 +12,4 @@
 (load "~/.emacs.d/etc/common_directories")
 (load "~/.emacs.d/etc/spec-runner")
 (load "~/.emacs.d/customizations/emacs_backup_files")
+(load "~/.emacs.d/customizations/git")
