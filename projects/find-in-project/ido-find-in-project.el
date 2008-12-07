@@ -25,15 +25,11 @@ strings to choose from."
       (iswitchb-read-buffer prompt)))
   (interactive)
   (cond ((project-root)
-         (lookup-and-switch-to 
+         (lookup-and-switch-to
           (interactive-find-in-project-prompt "find-in-project: "
                                               (firsts (find-files (project-root))))))))
-(defun lookup-and-switch-to (basename)
-  (defun lookup-file nil
-    (car (cdr (lookup-pair))))
-  (defun lookup-pair nil
-    (assoc basename (find-files (project-root))))
-  (find-file (concat (project-root) (lookup-file))))
+(defun lookup-and-switch-to (file)
+  (find-file (concat (project-root) file)))
 
 (defun find-files (project-root)
   "Find all the files in a project, and create a list of dotted pairs,
@@ -47,7 +43,7 @@ with the complete path name as the cdr, and the abbreviated path name as the car
         (split-string (shell-command-to-string shell-cmd)))))
 
   (mapcar
-   (lambda (file) (list (basename file) file))
+   (lambda (file) (list file))
    (find-all-files project-root (find-command))))
 
 (defconst *default-find-command-for-root-dir*
