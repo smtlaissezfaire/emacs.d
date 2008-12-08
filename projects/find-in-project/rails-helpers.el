@@ -2,11 +2,9 @@
 (defvar *git-project-root-file* ".git")
 (defvar *project-file* ".emproj")
 
-;; Define rails-root if it's not around
-(unless (functionp 'rails-root)
-  ;; Taken from rinari, with a slight modification
-  (defun rails-root
-    (project-file-root *rails-environment-file*)))
+;; Taken from rinari, with a slight modification
+(defun find-in-project-rails-root nil
+  (project-file-root *rails-environment-file*))
 
 (defun git-project-root nil
   (project-file-root *git-project-root-file*))
@@ -17,7 +15,7 @@
    (generic-project-root-p)))
 
 (defun generic-project-root-p nil
-  (or (rails-root)
+  (or (find-in-project-rails-root)
       (git-project-root)))
 
 (defun project-file-root (file &optional dir)
