@@ -1,0 +1,4 @@
+#contributor: smtlaissezfaire <scott@railsnewbie.com>
+#name : Set the debugger to run (set $debug = true)
+# --
+$debug = true
