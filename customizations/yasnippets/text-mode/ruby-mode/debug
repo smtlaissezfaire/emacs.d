@@ -1,0 +1,4 @@
+#contributor: smtlaissezfaire <scott@railsnewbie.com>
+#name : Invoke debugger
+# --
+require 'rubygems'; require 'ruby-debug'; debugger
