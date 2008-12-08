@@ -7,3 +7,6 @@
 [submodule "vendor/ruby"]
 	path = vendor/ruby
 	url = git://github.com/smtlaissezfaire/ruby-emacs.git
+[submodule "vendor/yasnippet"]
+	path = vendor/yasnippet
+	url = git://github.com/smtlaissezfaire/yasnippet.git
