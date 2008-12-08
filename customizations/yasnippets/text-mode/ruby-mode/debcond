@@ -1,0 +1,4 @@
+#contributor: smtlaissezfaire <scott@railsnewbie.com>
+#name : Invoke debugger conditionally
+# --
+require 'rubygems'; require 'ruby-debug'; debugger; $debug = false if $debug.equals?(true)
