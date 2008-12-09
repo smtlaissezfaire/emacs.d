@@ -4,6 +4,7 @@
   (find-file *gemdir*))
 (defalias 'gemdir 'go-to-gemdir)
 
+
 (defconst *flavorpill* "~/src/git/flavorpill_com")
 (defun go-to-flavorpill-directory nil 
   (interactive)
@@ -15,3 +16,10 @@
   (interactive)
   (find-file *guillotine*))
 (defalias 'guillotine 'go-to-guillotine-directory)
+
+(defconst *spotio* "~/src/git/spotio")
+(defun go-to-spotio-directory nil
+  (interactive)
+  (find-file *spotio**))
+(defalias 'spotio 'go-to-spotio-directory)
+
