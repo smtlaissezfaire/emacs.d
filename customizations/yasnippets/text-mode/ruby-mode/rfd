@@ -1,0 +1,4 @@
+#contributor: smtlaissezfaire <scott@railsnewbie.com>
+#name : require a file
+# --
+require File.dirname(__FILE__) + "/$1"
