@@ -17,9 +17,9 @@
   (find-file *guillotine*))
 (defalias 'guillotine 'go-to-guillotine-directory)
 
-(defconst *spotio* "~/src/git/spotio")
+(defconst *spotio* "~/src/git/spot.io")
 (defun go-to-spotio-directory nil
   (interactive)
-  (find-file *spotio**))
+  (find-file *spotio*))
 (defalias 'spotio 'go-to-spotio-directory)
 
