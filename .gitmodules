@@ -10,3 +10,6 @@
 [submodule "vendor/yasnippet"]
 	path = vendor/yasnippet
 	url = git://github.com/smtlaissezfaire/yasnippet.git
+[submodule "vendor/treetop-mode"]
+	path = vendor/treetop-mode
+	url = git://github.com/smtlaissezfaire/treetop-mode.git
