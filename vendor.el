@@ -20,4 +20,6 @@
 (require 'git)
 (require 'gitsum)
 
+(add-to-list 'load-path "~/.emacs.d/vendor/treetop-mode")
+(require 'treetop-mode)
 (load "~/.emacs.d/vendor/yasnippet")
