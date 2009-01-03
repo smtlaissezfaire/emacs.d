@@ -20,6 +20,4 @@
 (require 'git)
 (require 'gitsum)
 
-; treetop ruby editing mode:
-(load "~/.emacs.d/vendor/treetop")
 (load "~/.emacs.d/vendor/yasnippet")
