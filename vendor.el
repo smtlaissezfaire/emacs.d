@@ -12,6 +12,11 @@
 (add-to-list 'auto-mode-alist '("\\.js$" . js2-mode))
 (setq auto-mode-alist (append '(("\\.js$" . c-mode)) auto-mode-alist))
 
+
+;; cheat, for defunkt's cheat sheets:
+(add-to-list 'load-path "~/.emacs.d/vendor/cheat")
+(require 'cheat)
+
 ; for version control
 (add-to-list 'load-path "~/.emacs.d/vendor/magit")
 (require 'magit)
