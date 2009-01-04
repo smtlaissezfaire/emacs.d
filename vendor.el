@@ -13,6 +13,7 @@
 (setq auto-mode-alist (append '(("\\.js$" . c-mode)) auto-mode-alist))
 
 ; for version control
+(add-to-list 'load-path "~/.emacs.d/vendor/git")
 (add-to-list 'load-path "~/.emacs.d/vendor/gitsum")
 (add-to-list 'load-path "~/.emacs.d/vendor/magit")
 (autoload 'git-blame-mode "git-blame"
