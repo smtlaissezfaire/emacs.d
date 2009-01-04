@@ -13,3 +13,6 @@
 [submodule "vendor/treetop-mode"]
 	path = vendor/treetop-mode
 	url = git://github.com/smtlaissezfaire/treetop-mode.git
+[submodule "vendor/magit"]
+	path = vendor/magit
+	url = git://github.com/smtlaissezfaire/magit.git
