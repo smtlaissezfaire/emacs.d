@@ -19,3 +19,6 @@
 [submodule "vendor/git-emacs"]
 	path = vendor/git-emacs
 	url = git://github.com/tsgates/git-emacs.git
+[submodule "vendor/cheat"]
+	path = vendor/cheat
+	url = git://github.com/defunkt/cheat.el.git
