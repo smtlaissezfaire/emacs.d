@@ -13,12 +13,15 @@
 (setq auto-mode-alist (append '(("\\.js$" . c-mode)) auto-mode-alist))
 
 ; for version control
-(add-to-list 'load-path "~/.emacs.d/vendor/gitsum")
 (add-to-list 'load-path "~/.emacs.d/vendor/magit")
+(require 'magit)
+
+(add-to-list 'load-path "~/.emacs.d/vendor/gitsum")
+(require 'gitsum)
+
+(add-to-list 'load-path "~/.emacs.d/vendor/git-emacs")
 (autoload 'git-blame-mode "git-blame"
   "Minor mode for incremental blame for Git." t)
-(require 'gitsum)
-(require 'magit)
 
 (add-to-list 'load-path "~/.emacs.d/vendor/treetop-mode")
 (require 'treetop-mode)
