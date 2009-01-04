@@ -15,10 +15,13 @@
 ; for version control
 (add-to-list 'load-path "~/.emacs.d/vendor/git/")
 (add-to-list 'load-path "~/.emacs.d/vendor/gitsum/")
+(add-to-list 'load-path "~/.emacs.d/vendor/magit")
+
 (autoload 'git-blame-mode "git-blame"
   "Minor mode for incremental blame for Git." t)
 (require 'git)
 (require 'gitsum)
+(require 'magit)
 
 (add-to-list 'load-path "~/.emacs.d/vendor/treetop-mode")
 (require 'treetop-mode)
