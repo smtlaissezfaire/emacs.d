@@ -16,3 +16,6 @@
 [submodule "vendor/magit"]
 	path = vendor/magit
 	url = git://github.com/smtlaissezfaire/magit.git
+[submodule "vendor/git-emacs"]
+	path = vendor/git-emacs
+	url = git://github.com/tsgates/git-emacs.git
