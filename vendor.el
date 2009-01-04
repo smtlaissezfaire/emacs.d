@@ -17,6 +17,10 @@
 (add-to-list 'load-path "~/.emacs.d/vendor/cheat")
 (require 'cheat)
 
+;; gists
+(add-to-list 'load-path "~/.emacs.d/vendor/gist")
+(require 'gist)
+
 ; for version control
 (add-to-list 'load-path "~/.emacs.d/vendor/magit")
 (require 'magit)
