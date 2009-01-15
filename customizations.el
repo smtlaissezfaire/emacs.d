@@ -14,3 +14,4 @@
 (load "~/.emacs.d/customizations/emacs_backup_files")
 (load "~/.emacs.d/customizations/git")
 (load "~/.emacs.d/customizations/scheme")
+(load "~/.emacs.d/customizations/rake")
