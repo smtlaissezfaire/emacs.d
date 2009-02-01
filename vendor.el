@@ -34,4 +34,9 @@
 
 (add-to-list 'load-path "~/.emacs.d/vendor/treetop-mode")
 (require 'treetop-mode)
+
+(add-to-list 'load-path "~/.emacs.d/vendor/erlang_mode")
+(require 'erlang-start)
+
 (load "~/.emacs.d/vendor/yasnippet")
+
