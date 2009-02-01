@@ -25,3 +25,6 @@
 [submodule "vendor/gist"]
 	path = vendor/gist
 	url = git://github.com/defunkt/gist.el.git
+[submodule "vendor/erlang_mode"]
+	path = vendor/erlang_mode
+	url = git://github.com/smtlaissezfaire/erlang_mode.git
