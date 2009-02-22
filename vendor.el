@@ -1,4 +1,3 @@
-
 (add-to-list 'load-path "~/.emacs.d/vendor/")
 
 (require 'cl)
@@ -38,5 +37,7 @@
 (add-to-list 'load-path "~/.emacs.d/vendor/erlang_mode")
 (require 'erlang-start)
 
-(load "~/.emacs.d/vendor/yasnippet")
+(add-to-list 'load-path "~/.emacs.d/vendor/whitespace-el")
+(require 'whitespace)
 
+(load "~/.emacs.d/vendor/yasnippet")
