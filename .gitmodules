@@ -28,3 +28,6 @@
 [submodule "vendor/erlang_mode"]
 	path = vendor/erlang_mode
 	url = git://github.com/smtlaissezfaire/erlang_mode.git
+[submodule "vendor/whitespace-el"]
+	path = vendor/whitespace-el
+	url = git://github.com/smtlaissezfaire/whitespace-el.git
