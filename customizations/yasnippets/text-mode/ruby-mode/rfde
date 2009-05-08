@@ -1,0 +1,4 @@
+#contributor: smtlaissezfaire <scott@railsnewbie.com>
+#name : require a file, expanding it to the full path
+# --
+require File.expand_path(File.dirname(__FILE__) + "/$1")
