@@ -40,4 +40,6 @@
 (add-to-list 'load-path "~/.emacs.d/vendor/whitespace-el")
 (require 'whitespace)
 
+(require 'hen)
+
 (load "~/.emacs.d/vendor/yasnippet")
