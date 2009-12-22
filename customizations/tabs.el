@@ -12,3 +12,6 @@
 ;; Use 2 spaces for a "soft tab"
 (setq-default c-basic-offset 2)
 (set-tab-stop-width 2)
+(add-hook 'erlang-mode-hook
+          '(lambda()
+            (setq erlang-indent-level 2)))
