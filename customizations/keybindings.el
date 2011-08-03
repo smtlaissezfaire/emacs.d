@@ -15,3 +15,5 @@
 
 (global-set-key [(meta return)] 'toggle-fullscreen)
 
+;; always indent new lines, as per other editors
+(global-set-key (kbd "RET") 'newline-and-indent)
