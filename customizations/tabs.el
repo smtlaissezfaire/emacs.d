@@ -15,3 +15,7 @@
 (add-hook 'erlang-mode-hook
           '(lambda()
             (setq erlang-indent-level 2)))
+
+;; use space indentation for js2-mode
+;; http://stackoverflow.com/questions/45861/how-do-i-get-js2-mode-to-use-spaces-instead-of-tabs-in-emacs
+(setq-default indent-tabs-mode nil)
