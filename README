@@ -6,3 +6,15 @@ Much of this repository comes from my old experimental repository, found at
 the following url:
 
 http://github.com/smtlaissezfaire/emacs-lisp-experiments/tree/master
+
+== setup
+
+
+```
+git submodule init
+git submodule update
+cd vendor/rinari
+git submodule init
+git submodule update
+cd -
+```
